@@ -12,6 +12,7 @@ module.exports = {
       'textGray':'rgba(128, 128, 128, 1)',
       'searchBar':'rgba(242, 242, 242, 1)',
       'circleNav':'rgba(230, 230, 230, 1)',
+      
     },
     extend: {},
   },

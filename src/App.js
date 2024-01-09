@@ -6,7 +6,6 @@ function App() {
   return (
     <div className='flex h-screen'>
       <SideBar/>
-      {/* <Navbar /> */}
       <Slate/>
     </div>
   );

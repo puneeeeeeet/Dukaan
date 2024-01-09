@@ -6,7 +6,7 @@ import {ArrowNav} from '../../icons/arrowNav';
 
 function Navbar(){
     return(
-        <div className=" pl-8 py-3  flex items-center w-screen h-16">
+        <div className=" pl-8 py-3  flex items-center w-full h-16">
             <div className="w-80  inline-flex gap-x-4">
                 <div>
                     Payments
