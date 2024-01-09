@@ -1,4 +1,6 @@
 const SIZES = {
+  extraSmall:14,
+  lessSmall:16,
   small: 20,
   medium: 24,
   large: 32,

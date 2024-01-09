@@ -10,4 +10,4 @@ const Sort = ({ width, height, ...props }) => {
 
 }
 
-export { Sort }
+export { Sort };
