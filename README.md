@@ -1,3 +1,6 @@
+
+![Dukaan](https://github.com/puneeeeeeet/Dukaan/assets/98483573/eecf9ed3-031a-4c92-80ab-dcde2837334c)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
