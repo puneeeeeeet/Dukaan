@@ -9,4 +9,6 @@ const Analytics=({height,width,...props})=>{
 
     )
 }
-export {Analytics}
+export {Analytics}; 
+    
+    

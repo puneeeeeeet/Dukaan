@@ -6,6 +6,7 @@ const SIZES = {
 
 const COLORS = {
   white: "text-white",
+  
 };
 
 const Icon = ({ icon: IconComponent, size='small', color='white', onClick, className }) => {
