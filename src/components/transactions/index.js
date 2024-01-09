@@ -1,91 +1,86 @@
 import React from "react";
 import Filters from "./filters";
 import { Icon } from "../icon";
-import { Menu } from "../../icons/menu";
-import { Info } from "../../icons/info";
+import { ArrowNav } from "../../icons/arrowNav";
 
-const orderHeadings = [
+const table = [
   {
-    title: "Order ID",
-    icon: {},
+    id: "#28109",
+    date: "7 July,2023",
+    amount: "$1,278.23",
+    fee: "$22",
   },
   {
-    title: "Order Date",
-    icon: { Menu },
+    id: "#28109",
+    date: "7 July,2023",
+    amount: "$1,278.23",
+    fee: "$22",
   },
   {
-    title: "Order amount",
-    icon: {},
+    id: "#28109",
+    date: "7 July,2023",
+    amount: "$1,278.23",
+    fee: "$22",
   },
   {
-    title: "Transaction fees",
-    icon: { Info },
+    id: "#28109",
+    date: "7 July,2023",
+    amount: "$1,278.23",
+    fee: "$22",
+  },
+  {
+    id: "#28109",
+    date: "7 July,2023",
+    amount: "$1,278.23",
+    fee: "$22",
+  },
+  {
+    id: "#28109",
+    date: "7 July,2023",
+    amount: "$1,278.23",
+    fee: "$22",
+  },
+  {
+    id: "#28109",
+    date: "7 July,2023",
+    amount: "$1,278.23",
+    fee: "$22",
+  },
+  {
+    id: "#28109",
+    date: "7 July,2023",
+    amount: "$1,278.23",
+    fee: "$22",
+  },
+  {
+    id: "#28109",
+    date: "7 July,2023",
+    amount: "$1,278.23",
+    fee: "$22",
+  },
+  {
+    id: "#28109",
+    date: "7 July,2023",
+    amount: "$1,278.23",
+    fee: "$22",
+  },
+  {
+    id: "#28109",
+    date: "7 July,2023",
+    amount: "$1,278.23",
+    fee: "$22",
+  },
+  {
+    id: "#28109",
+    date: "7 July,2023",
+    amount: "$1,278.23",
+    fee: "$22",
   },
 ];
 
-
-const table =[
-    {
-        id:"#28109",
-        date:"7July,2023",
-        amount:"$1,278.23",
-        fee:"$22",
-    },{
-      id:"#28109",
-      date:"7July,2023",
-      amount:"$1,278.23",
-      fee:"$22",
-  },{
-    id:"#28109",
-    date:"7July,2023",
-    amount:"$1,278.23",
-    fee:"$22",
-},{
-  id:"#28109",
-  date:"7July,2023",
-  amount:"$1,278.23",
-  fee:"$22",
-},{
-  id:"#28109",
-  date:"7July,2023",
-  amount:"$1,278.23",
-  fee:"$22",
-},{
-  id:"#28109",
-  date:"7July,2023",
-  amount:"$1,278.23",
-  fee:"$22",
-},{
-  id:"#28109",
-  date:"7July,2023",
-  amount:"$1,278.23",
-  fee:"$22",
-},{
-  id:"#28109",
-  date:"7July,2023",
-  amount:"$1,278.23",
-  fee:"$22",
-},{
-  id:"#28109",
-  date:"7July,2023",
-  amount:"$1,278.23",
-  fee:"$22",
-},{
-  id:"#28109",
-  date:"7July,2023",
-  amount:"$1,278.23",
-  fee:"$22",
-},{
-  id:"#28109",
-  date:"7July,2023",
-  amount:"$1,278.23",
-  fee:"$22",
-},
-]
-
 const Transactions = () => {
   return (
-    <div className="flex flex-col w-full gap-8">
+    <div className="flex flex-col w-full gap-6">
       <div className="text-[#1A181E] text-xl font-medium">
         Transactions | This Month
       </div>
@@ -93,39 +88,27 @@ const Transactions = () => {
         <Filters />
       </div>
       <div className=" bg-searchBar items-center w-full h-10 gap-x-10 inline-flex ">
-        {orderHeadings?.map((btn) => {
+        <div className="w-60  ml-2 text-sm   ">Order ID</div>
+        <div className="w-60  ml-2 text-sm inline-flex items-center  ">
+          Order date
+          <Icon icon={ArrowNav} size="extraSmall" />
+        </div>
+        <div className="w-60  ml-2 text-sm   ">Order amount</div>
+        <div className="w-60  ml-2 px-10 text-sm   ">Transaction fees</div>
+      </div>
+      <div className="w-full  flex flex-col">
+        {table?.map((btn) => {
           return (
-            <div className="w-60  ml-2 text-sm    ">
-              {btn.title}
-              {/* <Icon {orderHeadings.icon} size="extraSmall" /> */}
-            </div>
+            <tr>
+              <div className=" w-full h-10 border-b-2 border-searchBar items-center   ">
+                <td className="w-60 px-4 text-[#146EB4]">{btn.id}</td>
+                <td className=" w-60 px-20  justify-end">{btn.date}</td>
+                <td className="w-60 px-32">{btn.amount}</td>
+                <td className="w-60 ml-10 px-32">{btn.fee}</td>
+              </div>
+            </tr>
           );
         })}
-      </div>
-      <div className="w-full gap-x-10 flex flex-col">
-
-        {
-            table?.map((btn)=>{
-                return(
-                    <div className="w-60 gap-x-10 items-center flex ">
-                    <div className=" pr-40 ml-2 text-sm gap-x-10 inline-flex">
-                        {btn.id}
-                      <div className=" pr-40 ml-2 text-sm gap-x-10 inline-flex">
-                        {btn.date}
-                        </div>
-                      <div className=" pr-40 ml-2 text-sm gap-x-10 inline-flex">
-                        {btn.amount}
-                        </div>
-                    <div className="pr-40 ml-2 text-sm gap-x-10 inline-flex">
-                      {btn.fee}
-                    </div>
-                </div>
-                </div>
-
-                )
-            })
-        }
-       
       </div>
     </div>
   );
