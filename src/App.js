@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import SideBar from './components/sideBar';
+import SideBar from './components/sideBar/sidebar';
+import Slate from './components/slate';
 function App() {
   return (
-    <div>
-      <SideBar>
-          {/* <Overview/> */}
-      </SideBar>
+    <div className='flex h-screen'>
+      <SideBar/>
+      <Slate/>
     </div>
   );
 }

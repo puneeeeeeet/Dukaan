@@ -7,7 +7,8 @@ module.exports = {
       'white': '#ffffff',
       'red':'#991b1b',
       'gray':'#353C53',
-      customWhite: 'rgba(255, 255, 255, 0.1)',
+      'customWhite': 'rgba(255, 255, 255, 0.1)',
+      'backgroundColor': '#FAFAFA'
     },
     extend: {},
   },

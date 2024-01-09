@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 
-
+.overview-shadow {
+  box-shadow: 0px 2px 6px 0px rgba(26, 24, 30, 0.04);
+}
 
 
 
