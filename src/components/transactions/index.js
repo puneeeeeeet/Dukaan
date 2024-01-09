@@ -27,50 +27,60 @@ const orderHeadings = [
 const table =[
     {
         id:"#28109",
-        date:"7 July,2023",
+        date:"7July,2023",
         amount:"$1,278.23",
         fee:"$22",
     },{
-        id:"#28109",
-        date:"7 July,2023",
-        amount:"$1,278.23",
-        fee:"$22",
-    },{
-        id:"#28109",
-        date:"7 July,2023",
-        amount:"$1,278.23",
-        fee:"$22",
-    },{
-        id:"#28109",
-        date:"7 July,2023",
-        amount:"$1,278.23",
-        fee:"$22",
-    },{
-        id:"#28109",
-        date:"7 July,2023",
-        amount:"$1,278.23",
-        fee:"$22",
-    },{
-        id:"#28109",
-        date:"7 July,2023",
-        amount:"$1,278.23",
-        fee:"$22",
-    },{
-        id:"#28109",
-        date:"7 July,2023",
-        amount:"$1,278.23",
-        fee:"$22",
-    },{
-        id:"#28109",
-        date:"7 July,2023",
-        amount:"$1,278.23",
-        fee:"$22",
-    },{
-        id:"#28109",
-        date:"7 July,2023",
-        amount:"$1,278.23",
-        fee:"$22",
-    },
+      id:"#28109",
+      date:"7July,2023",
+      amount:"$1,278.23",
+      fee:"$22",
+  },{
+    id:"#28109",
+    date:"7July,2023",
+    amount:"$1,278.23",
+    fee:"$22",
+},{
+  id:"#28109",
+  date:"7July,2023",
+  amount:"$1,278.23",
+  fee:"$22",
+},{
+  id:"#28109",
+  date:"7July,2023",
+  amount:"$1,278.23",
+  fee:"$22",
+},{
+  id:"#28109",
+  date:"7July,2023",
+  amount:"$1,278.23",
+  fee:"$22",
+},{
+  id:"#28109",
+  date:"7July,2023",
+  amount:"$1,278.23",
+  fee:"$22",
+},{
+  id:"#28109",
+  date:"7July,2023",
+  amount:"$1,278.23",
+  fee:"$22",
+},{
+  id:"#28109",
+  date:"7July,2023",
+  amount:"$1,278.23",
+  fee:"$22",
+},{
+  id:"#28109",
+  date:"7July,2023",
+  amount:"$1,278.23",
+  fee:"$22",
+},{
+  id:"#28109",
+  date:"7July,2023",
+  amount:"$1,278.23",
+  fee:"$22",
+},
 ]
 
 const Transactions = () => {
@@ -92,16 +102,24 @@ const Transactions = () => {
           );
         })}
       </div>
-      <div className="w-screen ">
+      <div className="w-full gap-x-10 flex flex-col">
 
         {
             table?.map((btn)=>{
                 return(
-                    <div className="w-60 bg-white ml-2 text-sm">
-                    {btn.id}
-                    {btn.date}
-                    {btn.amount}
-                    {btn.fee}
+                    <div className="w-60 gap-x-10 items-center flex ">
+                    <div className=" pr-40 ml-2 text-sm gap-x-10 inline-flex">
+                        {btn.id}
+                      <div className=" pr-40 ml-2 text-sm gap-x-10 inline-flex">
+                        {btn.date}
+                        </div>
+                      <div className=" pr-40 ml-2 text-sm gap-x-10 inline-flex">
+                        {btn.amount}
+                        </div>
+                    <div className="pr-40 ml-2 text-sm gap-x-10 inline-flex">
+                      {btn.fee}
+                    </div>
+                </div>
                 </div>
 
                 )
